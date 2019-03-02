@@ -27,7 +27,7 @@ MAKIndicatorView is to show custom indicator view for vertical and horizontal sc
 
 Check viewcontroller of project for demo.
 
-<img classes="fancybox fig-50" src="https://res.cloudinary.com/dlikzl3m2/image/upload/v1551557616/Github/license.png" style="width:7%;float:left"
+<img classes="fancybox fig-50" src="https://res.cloudinary.com/dlikzl3m2/image/upload/v1551560294/Github/license.png" style="width:5%;float:left"
 title="Princess Make up Screen shot 1"/>
 
 
