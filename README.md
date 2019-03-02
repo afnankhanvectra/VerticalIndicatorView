@@ -8,7 +8,7 @@ MAKIndicatorView is to show custom indicator view for vertical and horizontal sc
 
 
 | Attribute Name   | Default Value  | Description  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| :-----:|
 | unfillImage : ***UIImage***     | empty blank image | unfill image of indicator |
 | fillImage : ***UIImage***      | empty blank image | fill image of indicator |
 | maxiumNumberOfImages : ***Int***     | 1 | count of indicators in view |
