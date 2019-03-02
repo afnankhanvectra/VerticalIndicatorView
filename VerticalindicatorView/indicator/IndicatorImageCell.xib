@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="annotation_dot_fill" translatesAutoresizingMaskIntoConstraints="NO" id="9mD-Cg-YSz">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9mD-Cg-YSz">
                         <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
                     </imageView>
                 </subviews>
@@ -39,7 +39,4 @@
             <point key="canvasLocation" x="110.40000000000001" y="48.575712143928037"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="annotation_dot_fill" width="12" height="12"/>
-    </resources>
 </document>

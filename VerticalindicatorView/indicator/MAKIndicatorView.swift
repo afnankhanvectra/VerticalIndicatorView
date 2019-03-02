@@ -78,8 +78,7 @@ open class MAKIndicatorView: UIView {
         // Make the view stretch with containing view
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         // Adding custom subview on top of our view (over any custom drawing > see note below)
-        // view.backgroundColor = UIColor.clear
-        view.changeFrameOfColectionView(withframe: bounds)
+         view.changeFrameOfColectionView(withframe: bounds)
         addSubview(view)
      }
     

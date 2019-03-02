@@ -18,16 +18,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         indicatorView.selectedImage = 0
         indicatorView.maxiumNumberOfImages = demoIamges.count
-
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        
-    }
 }
 
 
@@ -58,7 +52,7 @@ extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource,
         var visibleIndexPath : IndexPath?
         visibleIndexPath = (self.collectionView.indexPathForItem(at: visiblePoint))
         indicatorView.selectedImage = visibleIndexPath?.row
-
+        
         
     }
 }
