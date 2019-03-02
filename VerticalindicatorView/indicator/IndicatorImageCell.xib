@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IndicatorImageCell" id="gTV-IL-0wX" customClass="IndicatorImageCell" customModule="VerticalindicatorView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="annotation_dot_fill" translatesAutoresizingMaskIntoConstraints="NO" id="9mD-Cg-YSz">
+                        <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9mD-Cg-YSz" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="8YK-0Z-Fs8"/>
+                <constraint firstItem="9mD-Cg-YSz" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="Pj4-ZP-Axv"/>
+                <constraint firstItem="9mD-Cg-YSz" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="T53-X7-YZw"/>
+                <constraint firstItem="9mD-Cg-YSz" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="aRV-ip-mwW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="indicatorImageView" destination="9mD-Cg-YSz" id="CRK-T6-tMz"/>
+            </connections>
+            <point key="canvasLocation" x="110.40000000000001" y="48.575712143928037"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="annotation_dot_fill" width="12" height="12"/>
+    </resources>
+</document>

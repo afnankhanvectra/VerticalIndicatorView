@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VerticalindicatorView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EwR-lE-Hfz">
+                                <rect key="frame" x="0.0" y="171" width="414" height="414"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EwR-lE-Hfz" secondAttribute="height" multiplier="1:1" id="qUa-XK-vD4"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="4Jc-5g-MTe">
+                                    <size key="itemSize" width="414" height="414"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MAKCollectionViewCell" id="cOm-pM-IFq" customClass="MAKCollectionViewCell" customModule="VerticalindicatorView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9V2-CU-UqM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="9V2-CU-UqM" firstAttribute="centerY" secondItem="cOm-pM-IFq" secondAttribute="centerY" id="18w-Rk-Z3J"/>
+                                            <constraint firstItem="9V2-CU-UqM" firstAttribute="height" secondItem="cOm-pM-IFq" secondAttribute="height" id="2k1-oX-FT8"/>
+                                            <constraint firstItem="9V2-CU-UqM" firstAttribute="centerX" secondItem="cOm-pM-IFq" secondAttribute="centerX" id="3p5-HQ-keG"/>
+                                            <constraint firstItem="9V2-CU-UqM" firstAttribute="width" secondItem="cOm-pM-IFq" secondAttribute="width" id="YDW-hk-A86"/>
+                                        </constraints>
+                                        <size key="customSize" width="414" height="414"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="9V2-CU-UqM" id="v8I-f2-sS2"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="n3A-8z-gCw"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="k48-7E-c2B"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEN-vX-jJQ" customClass="MAKIndicatorView" customModule="VerticalindicatorView" customModuleProvider="target">
+                                <rect key="frame" x="353.33333333333331" y="271.33333333333331" width="40.666666666666686" height="213.33333333333331"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LEN-vX-jJQ" secondAttribute="height" multiplier="50:263" id="7Zz-D8-nks"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="unfillImage" value="annotation_dot_unfill"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="fillImage" value="annotation_dot_fill"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LEN-vX-jJQ" secondAttribute="trailing" constant="20" id="U9w-CG-trm"/>
+                            <constraint firstItem="LEN-vX-jJQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="VAV-Sc-4z3"/>
+                            <constraint firstItem="EwR-lE-Hfz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="g5s-ti-Wf3"/>
+                            <constraint firstItem="LEN-vX-jJQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="260/896" id="l53-el-WYZ"/>
+                            <constraint firstItem="EwR-lE-Hfz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="mIp-v0-cUi"/>
+                            <constraint firstItem="EwR-lE-Hfz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pKg-gk-hny"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="EwR-lE-Hfz" id="Es4-Zh-yWx"/>
+                        <outlet property="indicatorView" destination="LEN-vX-jJQ" id="af8-GL-OqH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="58.920539730134934"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="annotation_dot_fill" width="12" height="12"/>
+        <image name="annotation_dot_unfill" width="12" height="12"/>
+    </resources>
+</document>
